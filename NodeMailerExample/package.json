@@ -1,0 +1,9 @@
+{
+  "name": "nodeMailer",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A simple example of how to send mail with node",
+  "devDependencies": {
+    "nodemailer": "0.7.1"
+  }
+}
