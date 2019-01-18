@@ -14,7 +14,7 @@ This should include script.start and main entries like this:
   "start": "node server.js"
 },
 "main": "server.js"
-,,,
+'''  
 
 ## This also allows you to use: ##
 npm start to run the app. 
