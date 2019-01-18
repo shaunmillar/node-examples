@@ -9,12 +9,12 @@ This information originated from: https://blog.openshift.com/run-your-nodejs-pro
 
 This should include script.start and main entries like this:
 
-'''javascript  
+```javascript  
 "scripts": {
   "start": "node server.js"
 },
 "main": "server.js"
-'''  
+```  
 
 ## This also allows you to use: ##
 npm start to run the app. 
@@ -27,17 +27,14 @@ npm install --save PACKAGE_NAME
 
 OpenShift’s Node.js cartridge automatically publishes server connection information to your application’s environment via the following environment variables: OPENSHIFT_NODEJS_PORT and OPENSHIFT_NODEJS_IP
 
-,,,
-
-
+```javascript
 var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
  
 server.listen(server_port, server_ip_address, function () {
   console.log( "Listening on " + server_ip_address + ", port " + server_port )
 });
-
-'''
+```
 
 That's it.. Now deploy to OpenShift!
 
