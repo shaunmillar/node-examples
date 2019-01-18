@@ -9,7 +9,7 @@ This information originated from: https://blog.openshift.com/run-your-nodejs-pro
 
 This should include script.start and main entries like this:
 
-,,,
+'''javascript  
 "scripts": {
   "start": "node server.js"
 },
